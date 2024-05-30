@@ -1,0 +1,203 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+#selector-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+#dropdown {
+    /* border: none; */
+    font-size: .9rem;
+}
+#menu-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 3rem; /* Ensures vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Optional, if it's a button */
+}
+#menu-button:hover{
+    background-color: #FF8800;
+    color:'black';
+    transform:scale(1.05);
+}
+
+.dishcard-container {
+    /* width: 110%; */
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin: auto;
+    width:60vw;
+    /* border:2px solid black; */
+    padding:1rem;
+
+    border-bottom: .5px solid #d6d6d6ce;
+}
+
+.dishcard-left-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    width:40vw;
+    padding:1rem;
+}
+
+.dishcard-right-container {
+    margin-left: 2rem;
+  
+}
+
+.dishcard-description {
+    font-size: .8rem;
+    color: #707070;
+    padding: 1rem 0;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.dishcard-name {
+    display: flex;
+}
+.dishcard-heading {
+    color: #1c1c1c;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.dishcard-rating {
+    height: min-content;
+    align-self: center;
+
+    display: flex;
+    align-items: center;
+    font-size: .6rem;
+    margin-left: 1rem;
+    background-color: #51C452;
+    border: none;
+    color: white;
+
+    border-radius: 10%;
+}
+.dishcard-rating > img {
+    margin-left: .2rem;
+    height: .4rem;
+}
+
+.dish-contents {
+    display: flex;
+    font-size: 10px;
+}
+
+.dish-equipments {
+    display: flex;
+    border-right: .5px solid #d6d6d6ce;
+}
+.dish-equipment {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dishcard-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dish-equipment > p {
+    margin: 0;
+}
+.dishcard-ingredients-button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.dishcard-ingredients-button > a {
+    display: block;
+    text-decoration: none;
+    color: #FF8800;
+}
+.dishcard-ingredients-button > a::after {
+    content: ">";
+}
+.dishcard-image {
+    width: 20vw;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-left: auto;
+
+}
+
+.image-overlay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -20px;
+    border:2px solid white;
+    width:13vw;
+    color:white;
+    background-color: #FF8800;
+    border-radius: 10px;
+}
+
+.increment-button,
+.decrement-button {
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.count {
+    color: black;
+    font-size: 18px;
+    user-select: none;
+    margin: 0 10px;
+}
+
+.increment-button:hover,
+.decrement-button:hover {
+    color: red;
+}
+@media only screen and (max-width: 768px){
+    .dishcard-container {
+        /* width: 110%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width:80vw;
+        border:2px solid black;
+        padding:1rem;
+    
+        border-bottom: .5px solid #d6d6d6ce;
+    }
+    .image-overlay{
+        width:25vw;
+        margin-top: 10px;
+    }
+    
+
+}

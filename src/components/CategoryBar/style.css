@@ -1,0 +1,31 @@
+#category-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  overflow: scroll;
+}
+#category-bar::-webkit-scrollbar {
+  display: none;
+}
+.category {
+  padding: 0.5rem;
+  margin-right: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  color: #000;
+  font-size: 0.8rem;
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+.category:hover {
+  color: black;
+  border: 1px solid #FF941A;
+  background-color: #FF941A;
+}
+.category.active {
+  color: #FF941A;
+  border: 1px solid #FF941A;
+}

@@ -1,0 +1,67 @@
+.calendar {
+  /* position: relative; */
+  width: auto;
+  margin: 0 auto;
+  /* padding: 20px; */
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  text-align: center;
+  /* padding: 10px; */
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.days {
+  margin-bottom: 10px;
+}
+
+.cell {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.cell.today {
+  background: #ffeb3b;
+}
+
+.cell.selected {
+  background: #f0f0f0;
+}
+
+.cell.disabled {
+  color: #ccc;
+}
+
+.number {
+  display: block;
+}
+@media only screen and(max-width: 600px) {
+  .calendar {
+    padding: 10px;
+  }
+  
+  .cell {
+    padding: 5px;
+  }
+  
+  .header .col {
+    padding: 5px;
+  }
+}
